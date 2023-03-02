@@ -1,10 +1,10 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
 }
 
 .caixa {
@@ -118,6 +118,7 @@ form label, form legend {
 
 .enviar {
 	width:40%;
+	min-width: 250px;
 	padding: 15px 0;
 	background: orange;
 	color: white;
@@ -208,11 +209,6 @@ td, th {
 	gap: 20px;
 }
 
-.lista-beneficios {
-    /* width: 40%; */
-    /* display: inline-block; */
-	/* vertical-align: top; */
-}
 
 .itens {
 	line-height: 2.5em;
@@ -288,11 +284,37 @@ td, th {
 	.imagem-beneficios {
 		width: 100%;
 	}
+	
+	.input-padrao {
+		margin: 0 auto 20px auto;
+	}
+
+	form label, form legend {
+		text-align: center;
+	}
+
+	.formulario {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.formulario-horario {
+		display: flex;
+		justify-content: center;
+	}
+
+	table {
+		margin: 20px auto 40px auto;
+	}
+
+	.produtos {
+		width: auto;
+	}
 
 }
 
 @media screen and (max-width: 630px) { 
-
 	.caixa {
 		margin-right: 0;
 		flex-direction: column;
